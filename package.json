@@ -1,0 +1,16 @@
+{
+  "name": "sls-python-poetry-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sls": "sls"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^3.38.0",
+    "serverless-python-requirements": "https://github.com/serverless/serverless-python-requirements.git#27b70f4d6a7e43fd0e9711bbb56752fee2762901"
+  }
+}
