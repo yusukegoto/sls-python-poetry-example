@@ -22,13 +22,21 @@ frameworkVersion: '3'
 
 provider:
   name: aws
-  runtime: python3.11
+  region: eu-west-1
+  stage: ${opt:stage, 'dev'}
+  runtime: nodejs18.x
+
+custom:
+  pythonRequirements:
+    dockerizePip: true
 
 functions:
   hello:
+    runtime: python3.11
     handler: handler.hello
 
   hellojs:
+    runtime: nodejs18.x
     handler: handlerjs.hello
 
 plugins:
