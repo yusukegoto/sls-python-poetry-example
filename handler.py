@@ -1,9 +1,10 @@
 import json
+import pandas
 
 
 def hello(event, context):
     body = {
-        "message": "Go Serverless v1.0! Your function executed successfully!",
+        "message": f"Go Serverless v1.0! Your function executed successfully with {pandas.__version__}!",
         "input": event
     }
 

@@ -28,5 +28,8 @@ functions:
   hello:
     handler: handler.hello
 
+  hellojs:
+    handler: handlerjs.hello
+
 plugins:
   - serverless-python-requirements
